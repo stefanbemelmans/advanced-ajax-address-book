@@ -3,18 +3,16 @@ import "./App.css";
 import UserDetailContainer from "./containers/UserDetailContainer";
 import ListOfUsersContainer from "./containers/ListOfUsersContainer";
 import SearchBox from "./components/SearchBox";
+import {connect} from "react-redux";
+import {loadUsers} from "./actions";
 
 class App extends Component {
   constructor() {
     super();
+    this.state = {users: []};
   }
   componentDidMount() {
-    fetch("/users")
-    .then(function (response) {
-      return response.json();
-    }).then(function (users) {
-      
-    });
+    this.props.loadUsers();
   }
   render() {
     return (
@@ -26,4 +24,11 @@ class App extends Component {
     );
   }
 }
-export default App;
+function mapDispatchToProps(dispatch) {
+  return {
+    loadUsers() {
+      dispatch(loadUsers());
+    }
+  };
+}
+export default connect(null,mapDispatchToProps)(App);

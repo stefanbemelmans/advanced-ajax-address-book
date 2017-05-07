@@ -1,11 +1,17 @@
 import {combineReducers} from 'redux';
 
-function users(state=[],action){
+function users(state = [],action) {
+  if (action.type === "USERS_LOADED") {
+    return action.value;
+  }
   return state;
 }
 function currentUser(state={},action){
   if( action.type === "CHOOSE_USER"){
     return action.value;
+  }
+  if (action.type === "USERS_LOADED") {
+    return action.value[0];
   }
   return state;
 }
