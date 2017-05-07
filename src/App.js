@@ -9,7 +9,12 @@ class App extends Component {
     super();
   }
   componentDidMount() {
-
+    fetch("/users")
+    .then(function (response) {
+      return response.json();
+    }).then(function (users) {
+      
+    });
   }
   render() {
     return (
@@ -21,5 +26,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
