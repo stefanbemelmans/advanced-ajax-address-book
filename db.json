@@ -1,14 +1,14 @@
 {
   "posts": [
     {
-      "id": 1,
+      "_id": 1,
       "title": "json-server",
       "author": "typicode"
     }
   ],
   "comments": [
     {
-      "id": 1,
+      "_id": 2,
       "body": "some comment",
       "postId": 1
     }
@@ -18,7 +18,7 @@
   },
   "users": [
     {
-      "id": 1,
+      "_id": 1,
       "first_name": "george",
       "last_name": "bluth",
       "address": "4116 Magnolia Drive, Portland, ME 04103",
@@ -27,7 +27,7 @@
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
     },
     {
-      "id": 2,
+      "_id": 2,
       "first_name": "lucille",
       "last_name": "bluth",
       "address": "6428 3rd Street East, Zion, IL 60099",
@@ -36,7 +36,7 @@
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
     },
     {
-      "id": 3,
+      "_id": 3,
       "first_name": "oscar",
       "last_name": "bluth",
       "address": "4797 Sycamore Lane, Dover, NH 03820",
@@ -45,7 +45,7 @@
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
     },
     {
-      "id": 4,
+      "_id": 4,
       "first_name": "steve",
       "last_name": "holt",
       "address": "3722 Circle Drive, Bristow, VA 20136",
@@ -54,7 +54,7 @@
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
     },
     {
-      "id": 5,
+      "_id": 5,
       "first_name": "gob",
       "last_name": "bluth",
       "address": "959 Hilltop Road, Apple Valley, CA 92307",
@@ -63,7 +63,7 @@
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"
     },
     {
-      "id": 6,
+      "_id": 6,
       "first_name": "tracey",
       "last_name": "bluth",
       "address": "2640 Primrose Lane, Longview, TX 75604",
