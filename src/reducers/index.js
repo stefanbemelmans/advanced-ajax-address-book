@@ -18,8 +18,17 @@ function searchText(state="",action){
 function filteredUsers(state=[],action){
   return state;
 }
-
+function users(state = [],action) {
+  if (action.type === "USERS_LOADED") {
+    return action.value;
+  }
+  return state;
+ }
+ 
 const rootReducer = combineReducers({
  users,searchText,currentUser,filteredUsers
 });
 export default rootReducer;
+
+
+ 
